@@ -12,7 +12,9 @@ public class Ejercicio3segundaParte {
 		System.out.println("Introduce una cadena");
 
 		Scanner sc = new Scanner(System.in);
-		StringBuffer cadena = sc.nextLine();
+		StringBuffer cadena= new StringBuffer();
+		cadena.append(sc.nextLine());
+		System.out.println("cadena invertida "+ cadena.reverse());
 		
 		
 		
