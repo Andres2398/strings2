@@ -12,12 +12,17 @@ public class Ejericico7 {
 		System.out.println("Introduce una cadena");
 
 		Scanner sc = new Scanner(System.in);
-		StringBuilder cadena = new StringBuilder();
-		cadena.append(sc.nextLine());
-		
-		cadena.replaceAll(" ", "");
-		
-		
+		String cadena = sc.nextLine();
+		cadena = cadena.replace(" ", "");
+		cadena = cadena.toLowerCase();
+		StringBuilder reversa = new StringBuilder(cadena);
+		reversa = reversa.reverse();
+
+		if (cadena.equals(reversa.toString())) {
+			System.out.println("Es palindromas");
+		} else {
+			System.out.println("No es palindromas");
+		}
 
 	}
 }
